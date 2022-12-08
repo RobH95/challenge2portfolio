@@ -1,9 +1,32 @@
-body {
+.container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  background-color: rgb(92, 110, 118);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "wrapper"
+    "main main . sidebar"
+    "about about about about";
 }
+.hero-banner {
+  grid-area: "banner";
+  background-color: darkmagenta;
 
 
+}
+.page-wrapper {
+  grid-area: "wrapper";
+  background-color: chartreuse;
+
+}
+#work{
+  grid-area: "work";
+  background-color:blueviolet;
+
+}
+#contact{
+  grid-area: "contact";
+  background-color: brown;
+}
+#about {
+  grid-area: "about";
+}
