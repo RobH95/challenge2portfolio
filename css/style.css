@@ -1,42 +1,68 @@
+h1{
+  text-align: center;
+}
+body {
+  background-color:lightslategray;
+  
+}
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
     "about work contact"
-    "portfolio portfolio2 porfolio3";
+    "portfolio portfolio2"
 }
-.hero-banner {
+/* .hero-banner {
   height: 200px;
   width: 200px;
-  background-color: darkmagenta;
+  margin-bottom: 40px;
+  background-color: powderblue; */
+/* }  */
 
 
-}
 #work{
   grid-area: "work";
-  background-color:blueviolet;
+  background-color: powderblue;
+  height: 200px;
+  /*background-image: url("/css/images/hollow\ knight.jpeg");*/
 }
 #contact{
   grid-area: "contact";
-  background-color: brown;
+  background-color: powderblue;
+  height: 200px;
 }
 #about {
   grid-area: "about";
-  background-color: teal;
+  background-color: powderblue;
+  height: 200px;
 }
 #portfolio {
   grid-area: "portfolio";
-  background-color: pink;
+  background-color: powderblue;
+  height: 200px;
 }
 #portfolio2 {
   grid-area: "portfolio2";
-  background-color: yellow;
+  background-color: powderblue;
+  height: 200px;
 }
 #portfolio3 {
   grid-area: "portfolio3";
-  background-color: aqua;
+  background-color: powderblue;
+  height: 200px;
 }
 .footer {
-  background-color: yellowgreen;
+  background-color: powderblue;
 }
+.hero-image {
+  display: block;
+  margin-left: 835px;
+  margin-right: auto;
+  align-items: center;
+}
+
+
+
+
