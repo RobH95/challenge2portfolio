@@ -1,27 +1,21 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "wrapper"
-    "main main . sidebar"
-    "about about about about";
+    "about work contact"
+    "portfolio portfolio2 porfolio3";
 }
 .hero-banner {
-  grid-area: "banner";
+  height: 200px;
+  width: 200px;
   background-color: darkmagenta;
 
-
-}
-.page-wrapper {
-  grid-area: "wrapper";
-  background-color: chartreuse;
 
 }
 #work{
   grid-area: "work";
   background-color:blueviolet;
-
 }
 #contact{
   grid-area: "contact";
@@ -29,4 +23,20 @@
 }
 #about {
   grid-area: "about";
+  background-color: teal;
+}
+#portfolio {
+  grid-area: "portfolio";
+  background-color: pink;
+}
+#portfolio2 {
+  grid-area: "portfolio2";
+  background-color: yellow;
+}
+#portfolio3 {
+  grid-area: "portfolio3";
+  background-color: aqua;
+}
+.footer {
+  background-color: yellowgreen;
 }
