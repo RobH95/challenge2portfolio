@@ -2,7 +2,7 @@
 
 * [Description](#description)
 * [Purpose](#purpose)
-* [Usage](#usage)∂
+* [Usage](#usage)
 * [Screenshots](#screenshots)
 * [License](#license)
 
