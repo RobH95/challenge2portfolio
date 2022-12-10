@@ -58,11 +58,30 @@ body {
 }
 .hero-image {
   display: block;
-  margin-left: 835px;
-  margin-right: auto;
-  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
+a {
+  background-color: powderblue;
+  color: #000;
+  padding: 5px;
+}
 
+h2 {
+  padding-left: 15px;
+}
 
+.portfolio-image {
+  height: 80%;
+  max-width: 100%;
+  display: block;
+}
 
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+
+}
