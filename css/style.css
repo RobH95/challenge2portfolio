@@ -3,79 +3,92 @@ h1{
 }
 body {
   background-color:lightslategray;
-  
+  font-family: "Open Sans", sans-serif;
 }
 .container {
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 
-    "about work contact"
-    "portfolio portfolio2"
+  grid-template-areas:
+  "header header header" 
+  "banner banner banner"
+  "about work contact"
+  "portfolio1 portfolio2 portfolio3"
+  "footer footer footer"
 }
-/* .hero-banner {
-  height: 200px;
-  width: 200px;
-  margin-bottom: 40px;
-  background-color: powderblue; */
-/* }  */
-
-
+ .hero-banner {
+  width: 100%;
+  margin-bottom: 40px; 
+  grid-area: banner;
+ }  
+ header {
+  grid-area: header;
+ }
 #work{
-  grid-area: "work";
+  grid-area: work;
   background-color: powderblue;
   height: 200px;
   /*background-image: url("/css/images/hollow\ knight.jpeg");*/
 }
 #contact{
-  grid-area: "contact";
+  grid-area: contact;
   background-color: powderblue;
   height: 200px;
 }
 #about {
-  grid-area: "about";
+  grid-area: about;
   background-color: powderblue;
   height: 200px;
 }
-#portfolio {
-  grid-area: "portfolio";
+#portfolio1 {
+  grid-area: portfolio1;
   background-color: powderblue;
   height: 200px;
 }
 #portfolio2 {
-  grid-area: "portfolio2";
+  grid-area: portfolio2;
   background-color: powderblue;
   height: 200px;
 }
 #portfolio3 {
-  grid-area: "portfolio3";
+  grid-area: portfolio3;
   background-color: powderblue;
   height: 200px;
 }
-.footer {
-  background-color: powderblue;
+footer {
+  grid-area: footer;
+  text-align: center;
 }
 .hero-image {
   display: block;
   text-align: center;
   padding-bottom: 20px;
 }
-
 a {
-  background-color: powderblue;
   color: #000;
   padding: 5px;
+}
+div#nav{
+  text-align: center;
+}
+div#nav ul{
+  display: inline-block;
 }
 
 h2 {
   padding-left: 15px;
 }
-
+.page-section{
+  padding: 0 0.5em;
+}
 .portfolio-image {
-  height: 80%;
+  height: 60%;
   max-width: 100%;
   display: block;
+  position: relative;
+  bottom: 35px;
+  left: 15px;
 }
 
 @media screen and (max-width: 992px) {
